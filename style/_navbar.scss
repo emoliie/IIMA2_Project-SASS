@@ -7,8 +7,7 @@
     align-items: center;
     padding: 2rem 0;
     color: variables.$primary-color;
-    max-width: 80vw;
-    margin: auto;
+    @include mixins.page-margin;
 
     svg {
         width: 200px;
