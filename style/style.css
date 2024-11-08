@@ -2,8 +2,10 @@
   display: grid;
   grid-template-columns: 300px 1fr 1fr;
   align-items: center;
-  padding: 2rem 10rem;
+  padding: 2rem 0;
   color: #003459;
+  max-width: 80vw;
+  margin: auto;
 }
 .navbar svg {
   width: 200px;
