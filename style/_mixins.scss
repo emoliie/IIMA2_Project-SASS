@@ -1,0 +1,72 @@
+@use 'variables';
+
+// Box
+@mixin box($width, $height : $width) {
+    width: $width;
+    height: $height;
+}
+
+// Flexbox
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Cover Background 
+@mixin cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+// Font weight
+@mixin font-weight($weight) {
+    @if $weight==medium {
+        font-family: variables.$medium;
+    }
+
+    @if $weight==bold {
+        font-family: variables.$bold;
+    }
+
+    @if $weight==heavy {
+        font-family: variables.$heavy;
+    }
+
+    @if $weight==regular {
+        font-family: variables.$regular;
+    }
+
+    @if $weight==light {
+        font-family: variables.$light;
+    }
+}
+
+//Button
+
+@mixin button-style($bg-color, $text-border-color, $padding-x) {
+    padding: 0.8rem $padding-x;
+    border-radius: 50px;
+    background-color: $bg-color;
+    color: $text-border-color;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    @if ($bg-color) == variables.$primary-color {
+        border: solid 2px variables.$primary-color;
+    } @else {
+        border : solid 2px $text-border-color;
+    }
+}

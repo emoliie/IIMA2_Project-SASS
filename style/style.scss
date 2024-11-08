@@ -5,5 +5,11 @@
 * {
     padding: 0;
     margin : 0;
-    font-family: variables.$medium;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header {
+    background-color: variables.$secondary-color;
 }
