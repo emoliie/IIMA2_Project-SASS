@@ -4,7 +4,7 @@
   align-items: center;
   padding: 2rem 0;
   color: #003459;
-  max-width: 80vw;
+  max-width: 70vw;
   margin: auto;
 }
 .navbar li, .navbar input, .navbar button {
@@ -178,7 +178,7 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .header header {
-  max-width: 80vw;
+  max-width: 70vw;
   margin: auto;
   display: grid;
   grid-template-columns: 600px 1fr;
@@ -264,7 +264,7 @@ body {
 
 .section {
   padding: 5rem 0;
-  max-width: 80vw;
+  max-width: 70vw;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -320,10 +320,11 @@ body {
 }
 .section .grid .grid_card {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
   padding: 0.7rem;
+  cursor: pointer;
 }
 .section .grid .grid_card img {
   width: 100%;
@@ -335,6 +336,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  justify-content: start;
 }
 .section .grid .grid_card .card_text .card-title, .section .grid .grid_card .card_text .card-price {
   color: #000;
@@ -349,15 +351,58 @@ body {
 }
 .section .section_box {
   background-color: #FCEED5;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 45%;
+}
+.section .section_box .box_right {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  justify-content: center;
+  padding: 4rem 7rem 4rem 0;
+  gap: 1.5rem;
+}
+.section .section_box .box_right h1 {
+  font-size: 3.5rem;
+}
+.section .section_box .box_right h2 {
+  font-size: 2.5rem;
 }
 .section .section_box .box_right .box_buttons {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
+  justify-content: end;
 }
 .section .section_box .box_right .box_buttons button {
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 1rem;
+}
+.section .section_box .box_left {
+  display: flex;
+  padding-top: 4rem;
+}
+.section .section_box .box_left img {
+  width: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section .grid-2 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section .card-bubble {
+  color: #fff;
+  background-color: #00A7E7;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  border-radius: 50px;
+  max-width: 100px;
+}
+.section .card-bubble p {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
