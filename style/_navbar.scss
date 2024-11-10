@@ -9,6 +9,10 @@
     color: variables.$primary-color;
     @include mixins.page-margin;
 
+    li, input, button {
+        font-size: 18px;
+    } 
+
     svg {
         width: 200px;
     }

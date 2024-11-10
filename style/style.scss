@@ -7,9 +7,184 @@
     margin : 0;
     list-style: none;
     text-decoration: none;
-    font-size: 18px;
+
 }
 
-header {
+body {
+    font-family: variables.$regular;
+    color: variables.$primary-color;
+}
+
+.text-black {
+    color: variables.$color-black;
+}
+
+.bold {
+    @include mixins.font-weight(bold);
+}
+
+.header {
     background-color: variables.$secondary-color;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+
+    header {
+        @include mixins.page-margin;
+        display: grid;
+        grid-template-columns: 600px 1fr;
+
+        
+        .header_left {
+            @include mixins.flex-column;
+            gap: 2rem;
+            padding-top: 5rem;
+            
+
+            h1 {
+                font-size: 4rem;
+            }
+            
+            h2 {
+                font-size: 3rem;
+            }
+
+            .header_buttons {
+                @include mixins.flex-row;
+                gap: 1.5rem;
+                
+                button {
+                    @include mixins.font-weight(medium);
+                    font-size: 1rem;
+                }
+                
+            }
+        }
+
+        .header_right {
+            display: flex;
+            justify-content: end;
+            img {
+                width: 950px;
+                @include mixins.cover-background;
+            }
+        }
+    }
+}
+
+.button-1 {
+    @include mixins.button-style(variables.$transparent, variables.$primary-color, 2rem);
+    @include mixins.flex-row;
+    gap: 0.5rem;
+    align-items: center;    
+
+    i {
+        font-size: 1.2rem
+    }
+}
+.button-1:hover {
+    @include mixins.button-style(variables.$primary-color, variables.$color-white, 2rem);
+}
+
+.button-2 {
+    @include mixins.button-style(variables.$primary-color, variables.$color-white, 2rem);
+}
+.button-2:hover {
+    @include mixins.button-style(variables.$transparent, variables.$primary-color, 2rem);
+}
+
+.section {
+    padding: 5rem 0;
+    @include mixins.page-margin;
+    @include mixins.flex-column;
+    gap: 3rem;
+
+    .section-1, .section-2 {
+        @include mixins.flex-column;
+        gap: 2rem;
+    }
+
+    .section_header {
+        @include mixins.flex-row;
+        justify-content: space-between;
+
+        .section_headline {
+            @include mixins.flex-column;
+            gap: 0.5rem;
+        }
+
+        .section_question {
+            @include mixins.font-weight(medium);
+        }
+        
+        .section_title {
+            font-size: 1.5rem;
+        }
+
+        .view-more {
+            @include mixins.flex-row;
+            @include mixins.button-style(variables.$transparent, variables.$primary-color, 2rem);
+            font-size: 1rem;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .view-more:hover {
+            @include mixins.button-style(variables.$primary-color, variables.$color-white, 2rem);
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-gap: 1rem;
+
+        .grid_card {
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            @include mixins.flex-column;
+            padding: 0.7rem;
+            
+            img {
+                width: 100%;
+                object-fit: contain;
+                align-self: center;
+            }
+
+            .card_text {
+                padding: 1rem;
+                @include mixins.flex-column;
+                gap: 0.7rem;
+
+                .card-title, .card-price {
+                    color: variables.$color-black;
+                }
+                
+                .card-info {
+                    color: variables.$color-grey;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .grid-1 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .section_box {
+        background-color: variables.$secondary-color;
+        .box_right {
+            .box_buttons {
+                @include mixins.flex-row;
+                gap: 1.5rem;
+                
+                button {
+                    @include mixins.font-weight(medium);
+                    font-size: 1rem;
+                }
+                
+            }
+        }
+    }
 }

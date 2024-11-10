@@ -7,6 +7,9 @@
   max-width: 80vw;
   margin: auto;
 }
+.navbar li, .navbar input, .navbar button {
+  font-size: 18px;
+}
 .navbar svg {
   width: 200px;
 }
@@ -154,11 +157,207 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-size: 18px;
 }
 
-header {
-  background-color: #F7DBA7;
+body {
+  font-family: "Gilroy-Regular", sans-serif;
+  color: #003459;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bold {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.header {
+  background-color: #FCEED5;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.header header {
+  max-width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 600px 1fr;
+}
+.header header .header_left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+.header header .header_left h1 {
+  font-size: 4rem;
+}
+.header header .header_left h2 {
+  font-size: 3rem;
+}
+.header header .header_left .header_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.header header .header_left .header_buttons button {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1rem;
+}
+.header header .header_right {
+  display: flex;
+  justify-content: end;
+}
+.header header .header_right img {
+  width: 950px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-1 {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #003459;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border: solid 2px #003459;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+.button-1 i {
+  font-size: 1.2rem;
+}
+
+.button-1:hover {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background-color: #003459;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border: solid 2px #003459;
+}
+
+.button-2 {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background-color: #003459;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border: solid 2px #003459;
+}
+
+.button-2:hover {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #003459;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border: solid 2px #003459;
+}
+
+.section {
+  padding: 5rem 0;
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.section .section-1, .section .section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section .section_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section .section_header .section_headline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section .section_header .section_question {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.section .section_header .section_title {
+  font-size: 1.5rem;
+}
+.section .section_header .view-more {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #003459;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border: solid 2px #003459;
+  font-size: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+.section .section_header .view-more:hover {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background-color: #003459;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  border: solid 2px #003459;
+}
+.section .grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+.section .grid .grid_card {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+}
+.section .grid .grid_card img {
+  width: 100%;
+  object-fit: contain;
+  align-self: center;
+}
+.section .grid .grid_card .card_text {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.section .grid .grid_card .card_text .card-title, .section .grid .grid_card .card_text .card-price {
+  color: #000;
+}
+.section .grid .grid_card .card_text .card-info {
+  color: #667479;
+  font-size: 14px;
+}
+.section .grid-1 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.section .section_box {
+  background-color: #FCEED5;
+}
+.section .section_box .box_right .box_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.section .section_box .box_right .box_buttons button {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

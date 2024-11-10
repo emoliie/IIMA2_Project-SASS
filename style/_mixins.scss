@@ -55,7 +55,6 @@
 }
 
 //Button
-
 @mixin button-style($bg-color, $text-border-color, $padding-x) {
     padding: 0.8rem $padding-x;
     border-radius: 50px;
@@ -72,8 +71,12 @@
 }
 
 // Marges
-
 @mixin page-margin {
     max-width: 80vw;
     margin: auto;
+}
+
+// Box shadow 
+@mixin shadow {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
 }
