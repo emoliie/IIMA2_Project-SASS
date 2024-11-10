@@ -17,42 +17,6 @@
         width: 200px;
     }
 
-    .navbar_menu {
-        @include mixins.font-weight(bold);
-        @include mixins.flex-row;
-        gap: 3rem;
-        justify-content: start;
-
-        @for $i from 1 through 4 {
-            .menu-#{$i} {
-                position: relative;
-                cursor: pointer;
-            }
-    
-            .menu-#{$i}:hover {
-            color: variables.$primary-color; 
-            }
-    
-            .menu-#{$i}::before {
-                content: "";
-                position: absolute;
-                display: block;
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background-color: variables.$primary-color;
-                transform: scaleX(0);
-                transition: transform 0.3s ease;
-              }
-    
-              .menu-#{$i}:hover::before {
-                transform: scaleX(1);
-              }
-              
-        }
-    }
-
     .navbar_buttons {
         @include mixins.flex-row;
         align-items: center;
@@ -88,5 +52,41 @@
             @include mixins.button-style(variables.$transparent, variables.$primary-color, 5rem);
         }
 
+    }
+}
+
+.menu {
+    @include mixins.font-weight(bold);
+    @include mixins.flex-row;
+    gap: 3rem;
+    justify-content: start;
+
+    @for $i from 1 through 4 {
+        .menu-#{$i} {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .menu-#{$i}:hover {
+        color: variables.$primary-color; 
+        }
+
+        .menu-#{$i}::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: variables.$primary-color;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+          }
+
+          .menu-#{$i}:hover::before {
+            transform: scaleX(1);
+          }
+          
     }
 }

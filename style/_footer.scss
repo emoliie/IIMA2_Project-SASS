@@ -1,0 +1,103 @@
+@use 'variables';
+@use 'mixins';
+
+.footer {
+    background-color: variables.$secondary-color;
+
+    .footer_content {
+        @include mixins.page-margin;
+        @include mixins.flex-column;
+        padding-top: 3rem;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        .footer_box {
+            background-color: variables.$primary-color;
+            color: variables.$color-white;
+            padding: 2rem;
+            border-radius: variables.$border-10;
+            display: grid;
+            grid-template-columns: 35% 1fr;
+            gap: 2rem;
+            width: -webkit-fill-available;
+            
+            .box_left {
+                @include mixins.font-weight(medium);
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+            }
+    
+            .box_right {
+                background-color: variables.$color-white;
+                padding: 0.7rem;
+                border-radius: variables.$border-10;
+                display: flex;
+                justify-content: space-between;
+                
+    
+                input, .subscribe {
+                    border-radius: variables.$border-5;
+                    outline: none;
+                    border: solid 1px variables.$color-grey;
+                    color: variables.$color-grey;
+                    padding: 0.7rem;
+                    @include mixins.font-weight(light);
+                }
+    
+                input {
+                    width: 75%;
+                }
+    
+                .subscribe {
+                    background-color: variables.$primary-color;
+                    color: variables.$color-white;
+    
+                }
+            }
+        }
+
+    }
+
+    .footer_menu {
+        @include mixins.flex-row;
+        justify-content: space-between;
+        width: 100%;
+        color: variables.$color-black;
+
+
+        .footer_socials {
+            @include mixins.flex-row;
+            justify-content: space-between;
+            gap: 3rem;
+            
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .solid-line {
+        border-top: 1px rounded variables.$color-grey;
+        width: 100%;
+    }
+
+    .footer_credits {
+        color : variables.$color-grey;
+        @include mixins.flex-row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        
+        svg {
+            width: 170px;
+        }
+
+        div {
+            @include mixins.flex-row;
+            gap:2rem;
+        }
+    }
+
+}

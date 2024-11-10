@@ -4,7 +4,7 @@
   align-items: center;
   padding: 2rem 0;
   color: #003459;
-  max-width: 70vw;
+  max-width: 80vw;
   margin: auto;
 }
 .navbar li, .navbar input, .navbar button {
@@ -12,101 +12,6 @@
 }
 .navbar svg {
   width: 200px;
-}
-.navbar .navbar_menu {
-  font-family: "Gilroy-Bold", sans-serif;
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  justify-content: start;
-}
-.navbar .navbar_menu .menu-1 {
-  position: relative;
-  cursor: pointer;
-}
-.navbar .navbar_menu .menu-1:hover {
-  color: #003459;
-}
-.navbar .navbar_menu .menu-1::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #003459;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-.navbar .navbar_menu .menu-1:hover::before {
-  transform: scaleX(1);
-}
-.navbar .navbar_menu .menu-2 {
-  position: relative;
-  cursor: pointer;
-}
-.navbar .navbar_menu .menu-2:hover {
-  color: #003459;
-}
-.navbar .navbar_menu .menu-2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #003459;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-.navbar .navbar_menu .menu-2:hover::before {
-  transform: scaleX(1);
-}
-.navbar .navbar_menu .menu-3 {
-  position: relative;
-  cursor: pointer;
-}
-.navbar .navbar_menu .menu-3:hover {
-  color: #003459;
-}
-.navbar .navbar_menu .menu-3::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #003459;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-.navbar .navbar_menu .menu-3:hover::before {
-  transform: scaleX(1);
-}
-.navbar .navbar_menu .menu-4 {
-  position: relative;
-  cursor: pointer;
-}
-.navbar .navbar_menu .menu-4:hover {
-  color: #003459;
-}
-.navbar .navbar_menu .menu-4::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #003459;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-.navbar .navbar_menu .menu-4:hover::before {
-  transform: scaleX(1);
 }
 .navbar .navbar_buttons {
   display: flex;
@@ -152,6 +57,190 @@
   border: solid 2px #003459;
 }
 
+.menu {
+  font-family: "Gilroy-Bold", sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: start;
+}
+.menu .menu-1 {
+  position: relative;
+  cursor: pointer;
+}
+.menu .menu-1:hover {
+  color: #003459;
+}
+.menu .menu-1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #003459;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.menu .menu-1:hover::before {
+  transform: scaleX(1);
+}
+.menu .menu-2 {
+  position: relative;
+  cursor: pointer;
+}
+.menu .menu-2:hover {
+  color: #003459;
+}
+.menu .menu-2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #003459;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.menu .menu-2:hover::before {
+  transform: scaleX(1);
+}
+.menu .menu-3 {
+  position: relative;
+  cursor: pointer;
+}
+.menu .menu-3:hover {
+  color: #003459;
+}
+.menu .menu-3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #003459;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.menu .menu-3:hover::before {
+  transform: scaleX(1);
+}
+.menu .menu-4 {
+  position: relative;
+  cursor: pointer;
+}
+.menu .menu-4:hover {
+  color: #003459;
+}
+.menu .menu-4::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #003459;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.menu .menu-4:hover::before {
+  transform: scaleX(1);
+}
+
+.footer {
+  background-color: #FCEED5;
+}
+.footer .footer_content {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.footer .footer_content .footer_box {
+  background-color: #003459;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  gap: 2rem;
+  width: -webkit-fill-available;
+}
+.footer .footer_content .footer_box .box_left {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer .footer_content .footer_box .box_right {
+  background-color: #fff;
+  padding: 0.7rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer_content .footer_box .box_right input, .footer .footer_content .footer_box .box_right .subscribe {
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px #667479;
+  color: #667479;
+  padding: 0.7rem;
+  font-family: "Gilroy-Light", sans-serif;
+}
+.footer .footer_content .footer_box .box_right input {
+  width: 75%;
+}
+.footer .footer_content .footer_box .box_right .subscribe {
+  background-color: #003459;
+  color: #fff;
+}
+.footer .footer_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: #000;
+}
+.footer .footer_menu .footer_socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.footer .footer_menu .footer_socials i {
+  font-size: 1.5rem;
+}
+.footer .solid-line {
+  border-top: 1px rounded #667479;
+  width: 100%;
+}
+.footer .footer_credits {
+  color: #667479;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer_credits svg {
+  width: 170px;
+}
+.footer .footer_credits div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -178,7 +267,7 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .header header {
-  max-width: 70vw;
+  max-width: 80vw;
   margin: auto;
   display: grid;
   grid-template-columns: 600px 1fr;
@@ -264,7 +353,7 @@ body {
 
 .section {
   padding: 5rem 0;
-  max-width: 70vw;
+  max-width: 80vw;
   margin: auto;
   display: flex;
   flex-direction: column;
